@@ -70,6 +70,8 @@ int main(){
     float densidade2 = (float) populacao2 / area2;
     float pibpercapita2 = bilhao2 / populacao2;
 
+
+    printf("DADOS DA CARTA NÚMERO 1 \n");
     printf("ESTADO: %c\n", estado1);
     printf("Código da Carta:%s\n", cod_carta1);
     printf("Nome da cidade: %s\n",nome_cidade1);
@@ -80,7 +82,7 @@ int main(){
     printf("Densidade Populacional: %.2f hab/km\n", densidade1);
     printf("PIB per Capita: %.2f reais\n", pibpercapita1);
 
-    
+    printf("DADOS DA CARTA NÚMERO 2\n");
     printf("ESTADO: %c\n", estado2);
     printf("Código da Carta:%s\n", cod_carta2);
     printf("Nome da cidade: %s\n",nome_cidade2);
