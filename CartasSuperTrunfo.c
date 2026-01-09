@@ -1,11 +1,12 @@
-#include <stdio.h>
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
-int main() {
-  char estado1;
+#include <stdio.h>
+
+int main(){
+    char estado1;
     char cod_carta1[4];
     char nome_cidade1[50];
     int populacao1, pontos_turisticos1;
@@ -31,6 +32,10 @@ int main() {
 
     printf("Digite o PIB: \n");
     scanf("%f", &pib1);
+
+    float bilhao1 = pib1* 1000000000;
+    float densidade1 = (float) populacao1 / area1;
+    float pibpercapita1 = bilhao1 / populacao1;
 
     
 
@@ -61,8 +66,10 @@ int main() {
     printf("Digite o PIB: \n");
     scanf("%f", &pib2);
 
+    float bilhao2 = pib2 * 1000000000;
+    float densidade2 = (float) populacao2 / area2;
+    float pibpercapita2 = bilhao2 / populacao2;
 
-    printf("DADOS DA CARTA NÚMERO 1\n");
     printf("ESTADO: %c\n", estado1);
     printf("Código da Carta:%s\n", cod_carta1);
     printf("Nome da cidade: %s\n",nome_cidade1);
@@ -70,10 +77,10 @@ int main() {
     printf("Quantidades de Pontos Turisticos: %i\n", pontos_turisticos1);
     printf("Area: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
+    printf("Densidade Populacional: %.2f hab/km\n", densidade1);
+    printf("PIB per Capita: %.2f reais\n", pibpercapita1);
 
     
-
-    printf("DADOS DA CARTA NÚMERO 2\n");
     printf("ESTADO: %c\n", estado2);
     printf("Código da Carta:%s\n", cod_carta2);
     printf("Nome da cidade: %s\n",nome_cidade2);
@@ -81,7 +88,8 @@ int main() {
     printf("Quantidades de Pontos Turisticos: %i\n", pontos_turisticos2);
     printf("Area: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
+    printf("Densidade Populacional: %.2f hab/km \n", densidade2);
+    printf("PIB per Capita: %.2f reais\n", pibpercapita2);
 
-
-return 0;
-} 
+    return 0;
+}
